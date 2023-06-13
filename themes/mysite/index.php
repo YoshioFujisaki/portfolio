@@ -1,16 +1,4 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
-    <title>よっちゃんのサイト</title>
-  </head>
+<?php get_header(); ?>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light py-3 bg-dark">
@@ -64,7 +52,7 @@
             <h1>INTRODUCE</h1>
             <div class="profile">
               <div class="icon">
-              <img src="img/profile.jpg" 
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/profile.jpg" 
               alt="藤﨑のアイコン"
               width="200"
               height="200"
@@ -264,12 +252,4 @@
     </div>
     <!-- Copyright -->
   </footer>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-  </body>
-</html>
+<?php get_footer(); ?>

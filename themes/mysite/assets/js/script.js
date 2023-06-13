@@ -26,7 +26,7 @@
 
 
   contSec.forEach((item, index) => {
-    console.log(item, index);
+    // console.log(item, index);
     // if(index % 2 == 0) {
     //   item.classList.add("slid-from-left");
     // }else {
